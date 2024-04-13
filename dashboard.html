@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacoid</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- GOOGLE FONTS LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONTS LINK END -->
+</head>
+
+<body>
+    <!-- WELCOME BACK HEADING -->
+    <div class="mt-[6vh] flex justify-center ">
+    <img class="relative right-[20vw] px-[2vw] bg-[#F1F1F1] rounded-md" src="images/back.svg" alt="Back">
+    <h1 class="font-[600] text-[4.5vw] text-[#2C2B2B]">Workout Tracker</h1>
+    <img onclick="clicked()" class="relative left-[20vw] px-[2vw] bg-[#F1F1F1] rounded-md cursor-pointer" src="images/forward.svg" alt="Forward">
+    </div>
+    <!-- CHART -->
+    <div class="ml-[4.5vw] mt-[8vh]">
+        <img class="" src="images/Chart.svg" alt="">
+    </div>
+
+    <!-- ALERT MEASSAGE -->
+    <div
+        class="flex items-center pl-[2vw] h-14 space-x-[2vw] ml-[4.5vw] bg-gradient-to-r from-[#819DFF47] to-[#10101000] rounded-[12px] mt-[5vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500]">
+        <img class="w-[5.3vw]" src="images/alert-triangle.svg" alt="Alert Sign"><span class="w-[60%]">You've burned
+            fewer calories than yesterday. Time to get moving!</span>
+    </div>
+
+    <!-- WORKOUTS -->
+    <div class="flex justify-between mt-[5vh] mx-[4.5vw]">
+        <h2 class="font-[600] text-[3.5vw] text-[#2C2B2B]">Upcoming Workout</h2>
+        <span class="font-[500] text-[2.635vw] text-[#7F7F7F]">See more</span>
+    </div>
+    <div
+        class="flex items-center justify-between pl-[2vw] h-[9.37vh] space-x-[2vw] ml-[4.5vw] rounded-[12px] mt-[2vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500] shadow-md">
+        <div class="flex items-center space-x-[1vw]">
+            <img class="w-[8.25vw]" src="images/Full Body.png" alt="Alert Sign"><span
+                class="flex flex-col space-y-[0.3vh]">
+                <span class="font-[500] text-[2.635vw] text-[#2C2B2B]">Full Body Workout</span>
+                <span class="font-[500] text-[2.18vw] text-[#7F7F7F]">Today 3pm</span>
+            </span>
+        </div>
+
+        <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer">
+            <div
+                class="relative w-11 h-6 bg-gray-200 peer-focus:ring-[#8099FF]
+                rounded-full peer dark:bg-[#8099FF] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#8099FF]">
+            </div>
+        </label>
+
+    </div>
+    
+    <div
+        class="flex items-center justify-between pl-[2vw] h-[9.37vh] space-x-[2vw] ml-[4.5vw] rounded-[12px] mt-[2vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500] shadow-md">
+        <div class="flex items-center space-x-[1vw]">
+            <img class="w-[8.25vw]" src="images/Upper Body.png" alt="Alert Sign"><span
+                class="flex flex-col space-y-[0.3vh]">
+                <span class="font-[500] text-[2.635vw] text-[#2C2B2B]">Upper Body Workout</span>
+                <span class="font-[500] text-[2.18vw] text-[#7F7F7F]">4 Feb, 3:30 pm</span>
+            </span>
+        </div>
+
+        <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer">
+            <div
+                class="relative w-11 h-6 bg-gray-200 peer-focus:ring-[#8099FF]
+                rounded-full peer dark:bg-[#8099FF] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#8099FF]">
+            </div>
+        </label>
+
+    </div>
+
+    <!-- OPTIONS -->
+    <h2 class="font-[600] text-[3.5vw] text-[#2C2B2B] mt-[2vh] mx-[4.5vw]">What Do You Want to Train</h2>
+    <div
+    class="flex items-center justify-between px-[2vw] h-[12.5vh] ml-[4.5vw] bg-[#8CB1FF99] rounded-[12px] mt-[3vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500]">
+    <span class="flex flex-col space-y-[1vh]">
+        <span>Full Body Workout</span>
+        <span class="text-[2.1vw]">Arms</span>
+        <span class="text-[2.1vw]">Chest</span>
+    </span>
+    <img class="w-[12.5vw] bg-[#ffffff48] rounded-[50%]" src="images/Other Exercise.png" alt="Alert Sign">
+    </div>
+    <div
+    class="flex items-center justify-between px-[2vw] h-[12.5vh] ml-[4.5vw] bg-[#8CB1FF99] rounded-[12px] mt-[3vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500]">
+    <span class="flex flex-col space-y-[1vh]">
+        <span>Full Body Workout</span>
+        <span class="text-[2.1vw]">Arms</span>
+        <span class="text-[2.1vw]">Chest</span>
+    </span>
+    <img class="w-[12.5vw] bg-[#ffffff48] rounded-[50%]" src="images/Other Exercise.png" alt="Alert Sign">
+    </div>
+    <div
+    class="flex items-center justify-between px-[2vw] h-[12.5vh] ml-[4.5vw] bg-[#8CB1FF99] rounded-[12px] mt-[3vh] w-[86.4vw] text-[2.635vw] text-[#2C2B2B] font-[500]">
+    <span class="flex flex-col space-y-[1vh]">
+        <span>Full Body Workout</span>
+        <span class="text-[2.1vw]">Arms</span>
+        <span class="text-[2.1vw]">Chest</span>
+    </span>
+    <img class="w-[12.5vw] bg-[#ffffff48] rounded-[50%]" src="images/Other Exercise.png" alt="Alert Sign">
+    </div>
+    <br><br><br>
+    <!-- TASK BAR -->
+    <div class="flex justify-around z-3 h-[9.5vh] w-[100vw] bg-[#ffffff] fixed bottom-0">
+        <div class="flex space-x-[12vw]">
+            <img class="w-[7vw]" src="images/Home.svg" alt="">
+            <img class="w-[7.2vw]" src="images/Options.svg" alt="">
+        </div>
+        <div class="flex space-x-[12vw]">
+            <img class="w-[7.8vw]" src="images/Camera.svg" alt="">
+            <img class="w-[5.8vw]" src="images/Account.svg" alt="">
+        </div>
+    </div>
+    <div class="fixed bottom-[-1.5vh] w-[100vw] flex justify-center">
+        <img class="w-[16.8vw] pb-[4.25vh]" src="images/Search.svg" alt="">
+    </div>
+
+    <script>
+        function clicked(){
+            window.location.href = "schedule.html";
+        }
+    </script>
+</body>
+
+</html>

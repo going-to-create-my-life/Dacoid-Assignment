@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacoid</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- GOOGLE FONTS LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK END -->
+    <style>
+        @keyframes fadeing {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+        @keyframes ShowIn {
+            0% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- FIRST PAGE STARTED -->
+    <!-- NAVBAR TYPE SKIP OPTION -->
+    <a href="signup.html" class="underline absolute top-[2vw] right-[2vw] text-[#9FB2FF] font-[500] text-[4vw]" >
+    Skip
+    </a>
+    <!-- FIRST PAGE IMAGE -->
+    <img id="First_img" class="w-[75.2vw] m-auto mt-[16vh]" src="images/Page1.png" alt="Running Man">
+    <!-- TEXTS -->
+    <div class="mx-[3vw] fixed top-[70vh] flex flex-col space-y-1">
+    <h1 id="Heading" class="font-[600] text-[4.375vw]">Track Your Goal</h1>
+    <p id="Content" class="font-[300] text-[3.5vw]">Don’t worry if you have trouble determining your goals, We can help you determine your goals and track your goals</p>
+    </div>
+    <!-- NEXT OPTION -->
+    <div onclick="clicked()">
+        <img id="Go_to_next" class="cursor-pointer fixed right-[2vw] bottom-[2vw]" src="images/Group 1.svg" alt="Next Option">
+    </div>
+    <!-- FIRST PAGE ENDED -->
+    <script>
+        var clickCounter=0;
+        function clicked(){
+            clickCounter++;
+            if(clickCounter==2){
+                window.location.href = "signup.html";
+            }
+            displayswapimg(document.getElementById('First_img'),"images/Page2.png");
+            displayswaptext(document.getElementById('Heading'),"Get Burn");
+            displayswaptext(document.getElementById('Content'),"Let’s keep burning to achieve your goals, it hurts only temporarily, if you give up now you will be in pain forever");
+            displayswapimg(document.getElementById('Go_to_next'),"images/Group 2.svg");
+        }
+        async function displayswapimg(item,img){
+            item.style.opacity = 1;
+            item.style = "animation : 1s ease-in 0.5s fadeing";
+            await new Promise(r => setTimeout(r, 1400));
+            item.src= img;
+            item.style = "animation : 1s ease-out 0s ShowIn";
+        }
+        async function displayswaptext(item,text){
+            item.style.opacity = 1;
+            item.style = "animation : 1s ease-in 0.5s fadeing";
+            await new Promise(r => setTimeout(r, 1400));
+            item.innerHTML = text;
+            item.style = "animation : 1s ease-out 0s ShowIn";
+        }
+    </script>
+</body>
+</html>

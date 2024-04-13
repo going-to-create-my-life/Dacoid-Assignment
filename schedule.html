@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacoid</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- GOOGLE FONTS LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONTS LINK END -->
+</head>
+
+<body>
+    <!-- WELCOME BACK HEADING -->
+    <div class="mt-[6vh] flex justify-center ">
+    <img onclick="clicked()" class="relative right-[20vw] px-[2vw] bg-[#F1F1F1] rounded-md cursor-pointer" src="images/back.svg" alt="Back">
+    <h1 class="font-[600] text-[4.5vw] text-[#2C2B2B]">Workout Schedule</h1>
+    </div>
+    <!-- DATE -->
+    <div class="mt-[1vh] flex justify-center space-x-[2vw]">
+        <img src="images/back.svg" alt="Back">
+        <span class="font-[600] text-[2.635vw] text-[#2C2B2B]">Feb 2024</span>
+        <img src="images/forward.svg" alt="Forward">
+    </div>
+    <div class="mt-[2vh] flex justify-center space-x-[2vw]">
+        <div class="flex flex-col items-center w-[16.8vw] rounded-md font-[600] text-[2vw] text-[#454545] pt-[1vh] pb-[2vh]">
+        Sun<br><span class="font-[600] text-[6vw]">5</span>
+        </div>
+
+        <div class="flex flex-col items-center w-[16.8vw] rounded-md font-[600] text-[2vw] text-[#454545] bg-gradient-to-r from-[#D1DBFF] to-[#8DA4FF] pt-[1vh] pb-[2vh]">
+        Mon<br><span class="font-[600] text-[6vw]">6</span>
+        </div>
+
+        <div class="flex flex-col items-center w-[16.8vw] rounded-md font-[600] text-[2vw] text-[#454545] pt-[1vh] pb-[2vh]">
+        Tue<br><span class="font-[600] text-[6vw]">7</span>
+        </div>
+
+        <div class="flex flex-col items-center w-[16.8vw] rounded-md font-[600] text-[2vw] text-[#454545] pt-[1vh] pb-[2vh]">
+        Wed<br><span class="font-[600] text-[6vw]">8</span>
+        </div>
+
+        <div class="flex flex-col items-center w-[16.8vw] rounded-md font-[600] text-[2vw] text-[#454545] pt-[1vh] pb-[2vh]">
+        Thu<br><span class="font-[600] text-[6vw]">9</span>
+        </div>
+    </div>
+
+    <!-- TIMES -->
+    <div>
+        <div class="mt-[5vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">06:00 AM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">07:00 AM</div>
+        <div class="mt-[2vh]">
+            <hr class="ml-[2.5vw] border-[#7F7F7F]">
+            <span class="absolute mt-[-4vw] ml-[50vw] p-[2vw] text-[2.635vw] font-[600] rounded-xl text-[#FFFFFF] bg-gradient-to-r from-[#E9B1E0] to-[#D3A4F4]">Upperbody Workout, 9am</span>
+        </div>
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">08:00 AM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">09:00 AM
+            <span class="ml-[20vw] p-[2vw] rounded-xl text-[#FFFFFF] bg-gradient-to-r from-[#E9B1E0] to-[#D3A4F4]">Upperbody Workout, 9am</span>
+        </div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">10:00 AM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">11:00 AM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">12:00 Noon</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">01:00 PM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">02:00 PM
+            <span class="ml-[20vw] p-[2vw] rounded-xl bg-[#F1F1F1]">Lowerbody Workout, 3pm</span>
+        </div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">03:00 PM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">04:00 PM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+        <div class="mt-[2vh] ml-[6vw] font-[600] text-[2.635vw] text-[#2C2B2B]">05:00 PM</div><hr class="ml-[2.5vw] mt-[2vh] border-[#7F7F7F]">
+    </div>
+    <br><br><br>
+
+    <!-- TASK BAR -->
+    <div class="flex justify-around z-3 h-[9.5vh] w-[100vw] bg-[#ffffff] fixed bottom-0">
+        <div class="flex space-x-[12vw]">
+            <img class="w-[7vw]" src="images/Home.svg" alt="">
+            <img class="w-[7.2vw]" src="images/Options.svg" alt="">
+        </div>
+        <div class="flex space-x-[12vw]">
+            <img class="w-[7.8vw]" src="images/Camera.svg" alt="">
+            <img class="w-[5.8vw]" src="images/Account.svg" alt="">
+        </div>
+    </div>
+    <div class="fixed bottom-[-1.5vh] w-[100vw] flex justify-center">
+        <img class="w-[16.8vw] pb-[4.25vh]" src="images/Search.svg" alt="">
+    </div>
+
+
+    <script>
+        function clicked(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+</body>
+
+</html>

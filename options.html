@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacoid</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- GOOGLE FONTS LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK END -->
+</head>
+<body>
+    <!-- WELCOME BACK HEADING -->
+    <h1 class="mt-[6vh] flex justify-center font-[600] text-[4.5vw] text-[#2C2B2B]">What are your goals?</h1>
+
+    <!-- OPTIONS -->
+    <div class="mt-[6vh] flex flex-col space-y-[3.5vh]">
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">Weight Loss <input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">Muscle Gain<input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">Flexibility and Mobility<input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">General Fitness<input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">Event - specific training<input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+        <div class="flex justify-between items-center px-[5vw] ml-[6.8vw] w-[86.4vw] h-[8vh] border-[#2C2B2B] bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold">Mindfulness and Mental Health<input class="accent-[#809AFF] bg-[#000000] ml-[6.8vw] w-[4vw] h-[4vw]" type="checkbox">
+        </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="clicked()" class="h-14 bg-gradient-to-r from-[#95BEFF] to-[#7B91FF] rounded-[12px] mt-[10vh] w-[86.4vw] ml-[6.8vw] text-[3.5vw] text-white font-[600]">Confirm</button>
+
+    <script>
+        function clicked(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+</body>
+</html>

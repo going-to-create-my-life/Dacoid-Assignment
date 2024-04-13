@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacoid</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- GOOGLE FONTS LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK END -->
+</head>
+<body>
+    <!-- WELCOME BACK HEADING -->
+    <h1 class="mt-[3vh] ml-[3vw] font-[600] text-[4.375vw] text-[#2C2B2B]">Welcome Back</h1>
+
+    <!-- 4 INPUTS -->
+    <div class="mt-[6vh] flex flex-col space-y-[4vh]">
+        <input class="py-[1vh] pl-[5vw] ml-[6.8vw] w-[86.4vw] h-[6.25vh] border-slate-950 bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold" type="email" placeholder="Email"/>
+        <input class="py-[1vh] pl-[5vw] ml-[6.8vw] w-[86.4vw] h-[6.25vh] border-slate-950 bg-[#F1F1F1] rounded-[12px] text-[2.625vw] font-semibold" type="password" placeholder="Password"/>
+    </div>
+
+    <!-- FORGOT PASSWORD -->
+    <div class="mt-[2vh] ml-[7.8vw]">
+        <p class="inline-block font-[500] text-[2.635vw] text-[#7F7F7F] underline">
+            Forgot your password?
+        </p>
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="clicked()" class="h-14 bg-gradient-to-r from-[#95BEFF] to-[#7B91FF] rounded-[12px] mt-[5vh] w-[86.4vw] ml-[6.8vw] text-[3.5vw] text-white font-[600]">Sign In</button>
+
+    <!--OTHER OPTION -->
+    <!-- OR LINE -->
+    <div class="mt-[2vh] flex">
+        <hr class="w-[43vw] m-auto bg-[#7F7F7F] h-[0.5px]"><span class="font-[500] text-[2.635vw] text-[#2C2B2B]">Or</span>
+        <hr class="w-[43vw] m-auto bg-[#7F7F7F] h-[0.5px]">
+    </div>
+    <!-- ICONS -->
+    <div class="mt-[2.5vh] flex justify-center items-center h-15vh space-x-[4vw]">
+        <div class="flex items-center justify-center w-[11.7vw] h-[11.7vw] border-[1px] border-[#7F7F7F] rounded-[8px] "><img class="h-[4.8vw]" src="images/google.svg" alt="Google icon"></div>
+        <div class="flex items-center justify-center w-[11.7vw] h-[11.7vw] border-[1px] border-[#7F7F7F] rounded-[8px] "><img class="h-[4.8vw]" src="images/fb.svg" alt="FaceBook icon"></div>
+    </div>
+    <!-- LOGIN OPTION -->
+    <div class="flex justify-center mt-[6vw] font-[500] text-[2.635vw] text-[#2C2B2B]">Don’t have an account yet? <a href="signup.html" class="text-[#9FB2FF] underline"> Create an account</a></div>
+
+    <script>
+        function clicked(){
+            window.location.href = "options.html";
+        }
+    </script>
+</body>
+</html>
